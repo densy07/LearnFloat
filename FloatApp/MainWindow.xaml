@@ -1,0 +1,44 @@
+﻿<Window x:Class="FloatApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FloatApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="444.193" Width="760.64" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="CanMinimize">
+    <Grid>
+        <GroupBox Header="Enter your value here:" Height="74" Margin="30,10,30,0" VerticalAlignment="Top">
+            <DockPanel Margin="20,10,20,0" Height="30" VerticalAlignment="Top" LastChildFill="False">
+                <Label Content="Value:" Height="Auto" VerticalAlignment="Center"/>
+                <TextBox x:Name="value_input" TextWrapping="Wrap" VerticalAlignment="Center" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="20,0,0,0" TextChanged="OnValueInputChanged" Height="20" Width="550"/>
+            </DockPanel>
+        </GroupBox>
+        <GroupBox Header="Float Result:" Height="103" Margin="30,113,30,0" VerticalAlignment="Top">
+            <StackPanel Margin="0">
+                <DockPanel Margin="20,10,20,0" Height="30" VerticalAlignment="Top" LastChildFill="False">
+                    <Label Content="Float:" Height="Auto" VerticalAlignment="Center"/>
+                    <TextBox x:Name="float_value" TextWrapping="Wrap" VerticalAlignment="Center" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="20,0,0,0" HorizontalAlignment="Right" Height="20" Width="550" IsEnabled="False"/>
+                </DockPanel>
+                <DockPanel Margin="20,10,20,0" Height="30" VerticalAlignment="Top" LastChildFill="False">
+                    <Label Content="Bits:" Height="Auto" VerticalAlignment="Center"/>
+                    <TextBox x:Name="float_value_bits" TextWrapping="Wrap" VerticalAlignment="Center" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="20,0,0,0" MinWidth="350" Height="20" Width="550" IsEnabled="False"/>
+                </DockPanel>
+            </StackPanel>
+
+        </GroupBox>
+        <GroupBox Header="Double Result:" Height="112" Margin="30,230,30,0" VerticalAlignment="Top">
+            <StackPanel Margin="0">
+                <DockPanel Margin="20,10,20,0" Height="30" VerticalAlignment="Top" LastChildFill="False">
+                    <Label Content="Double:" Height="Auto" VerticalAlignment="Center"/>
+                    <TextBox x:Name="double_value" TextWrapping="Wrap" VerticalAlignment="Center" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="20,0,0,0" HorizontalAlignment="Right" Height="20" Width="550" IsEnabled="False"/>
+                </DockPanel>
+                <DockPanel Margin="20,10,20,0" Height="30" VerticalAlignment="Top" LastChildFill="False">
+                    <Label Content="Bits:" Height="Auto" VerticalAlignment="Center"/>
+                    <TextBox x:Name="double_value_bits" TextWrapping="Wrap" VerticalAlignment="Center" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="20,0,0,0" MinWidth="350" Height="20" Width="550" IsEnabled="False"/>
+                </DockPanel>
+            </StackPanel>
+
+        </GroupBox>
+
+    </Grid>
+</Window>
