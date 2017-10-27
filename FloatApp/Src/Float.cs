@@ -11,7 +11,7 @@ namespace FloatApp
         [System.Security.SecuritySafeCritical]
         public static unsafe int SingleToInt32Bits (float value)
         {
-             return *((int*)&value);
+            return *((int*)&value);
         }
 
         public static uint GetMantissa (int value)
